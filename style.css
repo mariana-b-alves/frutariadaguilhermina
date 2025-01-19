@@ -28,8 +28,9 @@ header .logo h1 {
     margin-left:10px;
 }
 
-.logo p {
-    margin-left:10px;
+.logo img{
+    width:300px;
+    padding-bottom:-100px;
 }
 
 header nav ul {
