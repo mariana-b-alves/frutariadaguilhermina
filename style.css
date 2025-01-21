@@ -55,91 +55,6 @@ header nav ul li a:active {
     color: #c9f1cb;
 }
 
-/*Menu mobile*/
-.popup-btn {
-    border:none;
-    background-color:transparent;
-    cursor:pointer;
-    font-size:20px;
-    outline:none;
-    display:none;
-    color:black;
-}
-
-.open-btn {
-    position:fixed;
-    top:10px;
-    right:350px;
-    color:black;
-} 
-
-.popup{
-    position: fixed;
-    /*Barra lateral fixa (fica no lugar enquanto faz-se scroll) */
-    z-index: 1;
-    /* Barra lateral fica no top */
-    top: 0;
-    left:0;
-    height:100%;
-    transform:translateX(-100%);
-    transition:transform 0.5s ease-in-out;
-}
-
-/*Se a classe .visible estiver dentro da classe .popup*/
-
-.popup.visible{
-    transform:translateX(0);
-}
-
-.popup-light{
-    background-color:white;
-    width:95%;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-    padding-top:40px;
-    position:fixed;
-}
-
-.popup-dark{
-    background-color:#4CAF50;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-    width:60%;
-    max-width:480px;
-    transition-delay:0.2s;
-}
-
-.close-btn{
-    opacity:0.4;
-    position:absolute;
-    top:30px;
-    left:60px;
-}
-
-.side-txt-list{
-    list-style-type:none;
-    padding:0;
-}
-
-.side-txt-list li{
-    margin:20px;
-}
-
-.side-txt-list li a, .main-menu a{
-    color:#4CAF50;
-    text-decoration:none;
-    font-size:17px;
-    font-weight:600;
-}
-
-.side-txt-list li a:hover, .main-menu a:hover{
-    color:#4CAF50;
-}
-
-button:hover{
-    color:#4CAF50;
-}
-
 /* Secção hero */
 .hero {
     background-color: #fff;
@@ -215,10 +130,10 @@ button:hover{
   .imgtestemunhos{
       gap: 100px;
       margin-top: 150px;
-      margin-left: 300px;
+      margin-left: 250px;
       margin-right: 300px;
-      justify-content: flex-end;
       display: flex;
+      flex-direction: row;
       text-align: center;
       
   }
@@ -243,28 +158,6 @@ button:hover{
       border-top:2px solid rgba(255, 255, 255, 0.5);
       backdrop-filter:blur(4px);
       box-shadow:20px 20px 70px rgb(0, 0, 0, 0.2);
-  }
-  
-  .testemunhos2{
-      background-color: #FFF;
-      padding: 50px 10px;
-      margin-bottom: 0;
-      height: auto;
-      border-top:2px solid rgba(255, 255, 255, 0.5);
-      backdrop-filter:blur(4px);
-      box-shadow:20px 20px 70px rgb(0, 0, 0, 0.2);
-  
-  }
-  
-  .testemunhos3 {
-      background-color: #FFF;
-      padding: 50px 10px;
-      margin-bottom: 0;
-      height: auto;
-      border-top:2px solid rgba(255, 255, 255, 0.5);
-      backdrop-filter:blur(4px);
-      box-shadow:20px 20px 70px rgb(0, 0, 0, 0.2);
-  
   }
   
   .testemunhospage {
@@ -355,14 +248,26 @@ footer {
         width: 250px;
         height: 335px;
     }
+
+    .logo img {
+        width:200px;
+    }
 }
 
 
- @media(min-width: 350px) and (max-width:720px) {
+ @media(min-width: 350px) and (max-width:620px) {
     .text{
         width:50%;
         font-size:20px;
         left:50px;
+    }
+ }
+
+ @media(min-width: 620px) and (max-width:720px) {
+    .text{
+        width:50%;
+        font-size:20px;
+        left:60px;
     }
  }
 
