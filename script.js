@@ -11,5 +11,5 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].classList.add('active');
-    setTimeout(showSlides, 7000); // Muda a imagem a cada 5 segundos
+    setTimeout(showSlides, 3000); // Muda a imagem a cada 3 segundos
 }
