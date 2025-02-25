@@ -51,7 +51,7 @@ header nav ul li a {
 }
 
 
-header nav ul li a:active {
+header nav ul li a:hover {
     color: #c9f1cb;
 }
 
@@ -122,6 +122,9 @@ header nav ul li a:active {
   }
   
   .imgtestemunhos h1{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       margin-top: 30px;
       font-weight: 700;
       font-size: 39px;
@@ -129,9 +132,6 @@ header nav ul li a:active {
   
   .imgtestemunhos{
       gap: 100px;
-      margin-top: 150px;
-      margin-left: 250px;
-      margin-right: 300px;
       display: flex;
       flex-direction: row;
       text-align: center;
@@ -168,7 +168,6 @@ header nav ul li a:active {
       text-align: center;
       font-size: 1.5em;
       padding-top: 0.5em;
-      margin-right: 50px;
   }
 
   .work6 {
@@ -224,10 +223,11 @@ footer {
 
 @media (min-width:350px) and (max-width: 1200px) {
     .imgtestemunhos {
-        display:grid;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: 126px;
-        margin-left:305px;
-        margin-right: 437px;
+      
     }
     
     .imgtestemunhos article {
